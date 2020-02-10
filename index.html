@@ -64,7 +64,7 @@
         <div class="container">
           <section class="services">
             <h2 class="visually-hidden">Услуги</h2>
-            <ul class="services-list">
+            <ul>
               <li class="services-block">
                 <img src="img/illustration-1.jpg" width="300" height="150" alt="Веб-сайты">
                 <h3 class="services-header">Веб-сайты</h3>
@@ -86,80 +86,95 @@
             </ul>
           </section>
 
-          <section class="advantage">
+          <section class="advantage services">
             <h2 class="visually-hidden">Преимущества</h2>
-            <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p>Выполняем заказы на разработку:</p>
-            <ul>
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-            <img src="img/nerds-illustration.png" alt="Лого">
-            <table>
-              <caption>С 2004 года Любим точность во всем:</caption>
-              <tr>
-                <td>146&#37;</td>
-                <td>100&#37;</td>
-                <td>50&#37;</td>
-              </tr>
-              <tr>
-                <td>Уровень самоотдачи</td>
-                <td>Соблюдение сроков</td>
-                <td>Минимальная предоплата</td>
-              </tr>
-            </table>
+            <section class="advantage-benefits">
+              <b class="advantage-promo">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+              <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+              <p class="advantage-header">Выполняем заказы на разработку:</p>
+              <ul class="advantage-list">
+                <li>Веб-сайтов любой сложности</li>
+                <li>Мобильных приложений для iOS и Android</li>
+                <li>Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </section>
+            <section class="advantage-aside">
+              <img src="img/nerds-illustration.png" width="360" height="215" alt="Логотип">
+              <table>
+                <caption class="advantage-header indent">С 2004 года Любим точность во всем:</caption>
+                <tr>
+                  <td class="advantage-promo">146<span class="littel">&#37;</span></td>
+                  <td class="advantage-promo">100<span class="littel">&#37;</span></td>
+                  <td class="advantage-promo">50<span class="littel">&#37;</span></td>
+                </tr>
+                <tr>
+                  <td>Уровень самоотдачи</td>
+                  <td>Соблюдение сроков</td>
+                  <td>Минимальная предоплата</td>
+                </tr>
+              </table>
+            </section>
           </section>
 
-          <section class="clientele">
+          <section class="clientele services">
             <h2 class="visually-hidden">Клиенты</h2>
-            <img src="img/logo-1.png" alt="HTMLacademy">
-            <img src="img/logo-2.png" alt="Borodinski">
-            <img src="img/logo-3.png" alt="pink">
-            <img src="img/logo-4.png" alt="Mishka">
+            <a class="clientele-link"><img src="img/logo-1.png" alt="HTMLacademy"></a>
+            <a class="clientele-link"><img src="img/logo-2.png" alt="Borodinski"></a>
+            <a class="clientele-link"><img src="img/logo-3.png" alt="pink"></a>
+            <a class="clientele-link"><img src="img/logo-4.png" alt="Mishka"></a>
           </section>
         </main>
       </div>
+
       <footer>
         <section class="map">
-          <section class="contacts">
-            <h2 class="visually-hidden">Контакты</h2>
-            <p>NЁRDS DESIGN STUDIO</p>
-            <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19&#8260;8  тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-            <button>Напишите нам</button>
+          <div class="container">
+            <section class="contacts">
+              <h2 class="visually-hidden">Контакты</h2>
+              <!-- <img src="img/map-marker.png" class="map-marker" alt="Метка Nerds"> -->
+              <p class="advantage-header">NЁRDS DESIGN STUDIO</p>
+              <p class=" ">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+                <div class="email-us">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p></div>
+                <button class="link">Напишите нам</button>
+              </section>
+            </div>
           </section>
+
+          <div class="container">
+            <section class="contacts-social">
+              <section class="social-media">
+                <a class="social-link" href="#"><img class="social-icons" src="img/icons/vk-icon.svg">Вконтакте</a>
+                <a class="social-link" href="#"><img class="social-icons" src="img/icons/fb-icon.svg">Фейсбук</a>
+                <a class="social-link" href="#"><img class="social-icons" src="img/icons/insta-icon.svg">Инстаграм</a>
+              </section>
+              <section class="sale">
+                <p class="advantage-promo">Давайте дружить, это выгодно!</p>
+                <p>Скидка 10&#37; для друзей из социальных сетей.</p>
+              </section>
+            </section>
+          </div>
+        </footer>
+
+        <section class="write-us">
+          <h3>Напишите нам</h3>
+          <form>
+            <label>
+              Ваше имя:
+              <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label>
+              Ваш e-mail:
+              <input type="email" name="email" placeholder="Для отправки ответа">
+            </label>
+            <label>
+              Текст письма:
+              <input type="text" name="text" placeholder="В свободной форме">
+            </label>
+            <button>Отправить</button>
+          </form>
         </section>
 
-        <section class="contacts-social">
-          <a href="#">Вконтакте</a>
-          <a href="#">Фейсбук</a>
-          <a href="#">Инстаграм</a>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10&#37; для друзей из социальных сетей.</p>
-        </section>
-      </footer>
-
-      <section class="write-us">
-        <h3>Напишите нам</h3>
-        <form>
-          <label>
-            Ваше имя:
-            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-          </label>
-          <label>
-            Ваш e-mail:
-            <input type="email" name="email" placeholder="Для отправки ответа">
-          </label>
-          <label>
-            Текст письма:
-            <input type="text" name="text" placeholder="В свободной форме">
-          </label>
-          <button>Отправить</button>
-        </form>
-      </section>
-
-      <script src="js/scripts.js"></script>
-      <script src="http://localhost:35729/livereload.js"></script>
-    </body>
-    </html>
+        <script src="js/scripts.js"></script>
+        <script src="http://localhost:35729/livereload.js"></script>
+      </body>
+      </html>
