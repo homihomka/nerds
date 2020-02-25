@@ -156,21 +156,24 @@
         </footer>
 
         <section class="write-us">
-          <h3>Напишите нам</h3>
+          <h3 class="advantage-promo">Напишите нам</h3>
+          <button type="button" class="close">Закрыть</button>
           <form>
-            <label>
-              Ваше имя:
+            <div class="write-us-row">
+            <label class="write-us-cell">
+              <span class="write-us-name">Ваше имя:</span>
               <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
             </label>
-            <label>
-              Ваш e-mail:
+            <label class="write-us-cell">
+              <span class="write-us-name">Ваш e-mail:</span>
               <input type="email" name="email" placeholder="Для отправки ответа">
             </label>
-            <label>
-              Текст письма:
-              <input type="text" name="text" placeholder="В свободной форме">
+          </div>
+            <label class="write-us-cell">
+              <span class="write-us-name">Текст письма:</span>
+              <textarea name="text" placeholder="В свободной форме"></textarea>
             </label>
-            <button>Отправить</button>
+            <button class="link write-us-button">Отправить</button>
           </form>
         </section>
 
