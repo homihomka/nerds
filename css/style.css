@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -408,6 +408,7 @@ input[name="slide"] {
 }
 
 .write-us {
+  display: none; /*hidden block*/
   position: fixed;
   top:50%;
   left:50%;
@@ -531,3 +532,174 @@ textarea[name="text"]{
 .close:active {
   opacity: 0.1;
 }
+
+.title {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.headline {
+  text-align: center;
+  margin: 0;
+  width: auto;
+}
+
+article {
+  margin-top: 50px;
+}
+
+.range-filter {
+  width: 240px;
+  margin: 20px auto;
+  display: inline-table;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .bar {
+  margin-left: 20%;
+  width: 30%
+}
+
+.button-show {
+  background-color: #eeeeee;
+  color: black;
+  border: 0;
+}
+
+.button-show:hover,
+.button-show:focus {
+  background-color: #e0e0e0;
+}
+
+.button-show:active {
+  background-color: #d6d6d6;
+  color: #959595;
+  box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+}
+
+.grid input,
+.features input{
+  margin-right: 10px;
+}
+
+.drid-filter,
+.features-filter,
+.button-show {
+  margin-top: 40px;
+}
+
+.grid input {
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+.grid label {
+  cursor: pointer;
+  line-height: 30px;
+}
+
+.grid input + span:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 3px #4c4c4c;
+  margin-right: 12px;
+}
+
+.grid input:checked + span:before {
+  background: #4c4c4c;
+  box-shadow: 0 0 0 3px #4c4c4c;
+}
+
+.grid label:hover,
+.grid label:focus {
+  opacity: 0.6;
+}
+
+/*.grid label {
+display: flex;
+width: 10px;
+height: 10px;
+margin-bottom: 10px;
+background-color: white;
+border: 5px solid #4c4c4c;
+vertical-align: top;
+border-radius: 50%;
+cursor: pointer;
+}
+
+#grid-1:checked ~ .grid label [for="grid-1"],
+#grid-2:checked ~ .grid label [for="grid-2"],
+#grid-3:checked ~ .grid label [for="grid-3"] {
+background-color: red;
+}*/
