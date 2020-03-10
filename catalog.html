@@ -38,7 +38,7 @@
 
     <article>
       <div class="container">
-        <h2 class="visually-hidden">Каталог</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <section class="catalog-sidebar">
           <p class="advantage-header">Стоимость:</p>
           <form action="form.php" method="GET">
@@ -64,11 +64,16 @@
           </form>
           <p class="advantage-header">Особенности:</p>
           <form class="features">
-            <label for="features"><input name="features" type="checkbox" value="slider" checked>Слайдер</label>
-            <label for="features"><input name="features" type="checkbox" value="block">Блок преимуществ</label>
-            <label for="features"><input name="features" type="checkbox" value="new" checked>Новости</label>
-            <label for="features"><input name="features" type="checkbox" value="gallery">Галерея</label>
-            <label for="features"><input name="features" type="checkbox" value="basket">Корзина</label>
+            <input name="features" type="checkbox" id="features-1" value="slider" checked>
+            <label for="features-1">Слайдер</label>
+            <input name="features" type="checkbox" id="features-2" value="block">
+            <label for="features-2">Блок преимуществ</label>
+            <input name="features" type="checkbox" id="features-3" value="new" checked>
+            <label for="features-3">Новости</label>
+            <input name="features" type="checkbox" id="features-4" value="gallery">
+            <label for="features-4">Галерея</label>
+            <input name="features" type="checkbox" id="features-5" value="basket">
+            <label for="features-5">Корзина</label>
           </form>
           <button class="link button-show">Показать</button>
         </section>

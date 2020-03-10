@@ -686,20 +686,38 @@ article {
   opacity: 0.6;
 }
 
-/*.grid label {
-display: flex;
-width: 10px;
-height: 10px;
-margin-bottom: 10px;
-background-color: white;
-border: 5px solid #4c4c4c;
-vertical-align: top;
-border-radius: 50%;
-cursor: pointer;
+.features label {
+  position: relative;
+  margin-bottom: 7px;
 }
 
-#grid-1:checked ~ .grid label [for="grid-1"],
-#grid-2:checked ~ .grid label [for="grid-2"],
-#grid-3:checked ~ .grid label [for="grid-3"] {
-background-color: red;
-}*/
+input[name="features"]:checked + label[for^="features-"]::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 16px;
+  height: 6px;
+  transform: rotate(-45deg);
+  border-left: 4px solid #4c4c4c;
+  border-bottom: 4px solid #4c4c4c;
+}
+
+.features input {
+  display: none;
+}
+
+.features label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  border: 3px solid #4c4c4c;
+  margin-right: 12px;
+}
+
+.features label:hover,
+.features label:focus {
+  opacity: 0.6;
+}
