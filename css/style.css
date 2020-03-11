@@ -544,8 +544,15 @@ textarea[name="text"]{
   width: auto;
 }
 
-article {
+.catalog-panel {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-sidebar {
+  width: 270px;
   margin-top: 50px;
+  margin-right: 140px;
 }
 
 .range-filter {
@@ -720,4 +727,85 @@ input[name="features"]:checked + label[for^="features-"]::after {
 .features label:hover,
 .features label:focus {
   opacity: 0.6;
+}
+
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  width: 765px;
+}
+
+.sort-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.sort-price-model {
+  margin-left: 290px;
+  position: relative;
+}
+
+.sort-price {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-right: 15px;
+}
+
+.sort-price:nth-child(3) {
+  padding-right: 70px;
+}
+
+.triangle-bottom {
+  border: 6px solid transparent;
+  border-top: 10px solid #231f20;
+  position: absolute;
+  top: 5px;
+}
+
+.triangle-top {
+  border: 6px solid transparent;
+  border-bottom: 10px solid #231f20;
+  position: absolute;
+  right: -55px;
+}
+
+.sort-price:hover,
+.sort-price:focus
+.triangle-bottom:focus,
+.triangle-bottom:hover,
+.triangle-top:hover,
+.triangle-top:focus {
+  opacity: 0.3;
+}
+
+.pagination-list {
+  width: 450px;
+  padding-bottom: 50px;
+}
+
+.pagination {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 10px;
+}
+
+.pagination:active {
+  background-color: #fff;
+  color: black;
+}
+
+.product-sites img:nth-child(odd) {
+  margin-right: 80px;
+}
+
+.product-sites img {
+  margin-bottom: 30px;
 }
