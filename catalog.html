@@ -14,13 +14,13 @@
     <div class="container">
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo" href="#">
+          <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" alt="Nerds">
           </a>
           <ul class="navigation">
-            <li><a class="navigation-link navigation-link-active" href="index.html">Студия</a></li>
+            <li><a class="navigation-link" href="index.html">Студия</a></li>
             <li><a class="navigation-link" href="index.html">Клиенты</a></li>
-            <li><a class="navigation-link" href="#">Магазин</a></li>
+            <li><a class="navigation-link navigation-link-active" href="#">Магазин</a></li>
             <li><a class="navigation-link" href="index.html">Контакты</a></li>
             <li>
               <a class="navigation-link" href="#"><img src="img/icons/cart-icon.svg">Корзина</a>
@@ -36,104 +36,131 @@
 
   <main>
 
-    <article>
-      <div class="container">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <section class="catalog-sidebar">
-          <p class="advantage-header">Стоимость:</p>
-          <form action="form.php" method="GET">
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+    <div class="container catalog-panel">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <article class="catalog-sidebar">
+        <p class="advantage-header">Стоимость:</p>
+        <form action="form.php" method="GET">
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="price-controls">
-                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
-              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-          </form>
-          <p class="advantage-header">Сетка:</p>
-          <form class="grid">
-            <label for="grid-1"><input name="grid" type="radio" id="grid-1" checked="checked"><span>Адаптивная</span></label>
-            <label for="grid-2"><input name="grid" type="radio" id="grid-2"><span>Фиксированная</span></label>
-            <label for="grid-3"><input name="grid" type="radio" id="grid-3"><span>Резиновая</span></label>
-          </form>
-          <p class="advantage-header">Особенности:</p>
-          <form class="features">
-            <input name="features" type="checkbox" id="features-1" value="slider" checked>
-            <label for="features-1">Слайдер</label>
-            <input name="features" type="checkbox" id="features-2" value="block">
-            <label for="features-2">Блок преимуществ</label>
-            <input name="features" type="checkbox" id="features-3" value="new" checked>
-            <label for="features-3">Новости</label>
-            <input name="features" type="checkbox" id="features-4" value="gallery">
-            <label for="features-4">Галерея</label>
-            <input name="features" type="checkbox" id="features-5" value="basket">
-            <label for="features-5">Корзина</label>
-          </form>
-          <button class="link button-show">Показать</button>
+            <div class="price-controls">
+              <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
+        </form>
+        <p class="advantage-header">Сетка:</p>
+        <form class="grid">
+          <label for="grid-1"><input name="grid" type="radio" id="grid-1" checked="checked"><span>Адаптивная</span></label>
+          <label for="grid-2"><input name="grid" type="radio" id="grid-2"><span>Фиксированная</span></label>
+          <label for="grid-3"><input name="grid" type="radio" id="grid-3"><span>Резиновая</span></label>
+        </form>
+        <p class="advantage-header">Особенности:</p>
+        <form class="features">
+          <input name="features" type="checkbox" id="features-1" value="slider" checked>
+          <label for="features-1">Слайдер</label>
+          <input name="features" type="checkbox" id="features-2" value="block">
+          <label for="features-2">Блок преимуществ</label>
+          <input name="features" type="checkbox" id="features-3" value="new" checked>
+          <label for="features-3">Новости</label>
+          <input name="features" type="checkbox" id="features-4" value="gallery">
+          <label for="features-4">Галерея</label>
+          <input name="features" type="checkbox" id="features-5" value="basket">
+          <label for="features-5">Корзина</label>
+        </form>
+        <button class="link button-show">Показать</button>
+      </article>
+
+      <div class="catalog-container">
+        <h2 class="visually-hidden">Перечень товаров</h2>
+        <section class="sort-title">
+          <p class="advantage-header">Сортировать:</p>
+          <div class="sort-price-model">
+            <a class="sort-price" href="catalog.html">По цене</a>
+            <a class="sort-price" href="catalog.html">По типу</a>
+            <a class="sort-price" href="catalog.html">По названию</a>
+            <a class="triangle-bottom" href="catalog.html"></a>
+            <a class="triangle-top" href="catalog.html"></a>
+          </div>
         </section>
+
+        <section class="catalog-container">
+          <div class="product-sites">
+            <img src="img/img-sedona.jpg" width="330" height="480" alt="Седона">
+            <img src="img/img-pink.jpg" width="330" height="480" alt="Пинк">
+            <img src="img/img-barbershop.jpg" width="330" height="480" alt="Барбершоп">
+            <img src="img/img-mishka.jpg" width="330" height="480" alt="Мишка">
+            <img src="img/img-aplus.jpg" width="330" height="480" alt="Яблоко">
+            <img src="img/img-kvast.jpg" width="330" height="480" alt="Квас">
+          </div>
+        </section>
+        <div class="pagination-list">
+          <button class="link button-show pagination">1</button>
+          <button class="link button-show pagination">2</button>
+          <button class="link button-show pagination">3</button>
+          <button class="link button-show">Следующая</button>
+        </div>
       </div>
-    </article>
+    </main>
 
-  </main>
+    <footer>
+      <section class="map">
+        <div class="container">
+          <section class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <!-- <img src="img/map-marker.png" class="map-marker" alt="Метка Nerds"> -->
+            <p class="advantage-header">NЁRDS DESIGN STUDIO</p>
+            <p class=" ">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+              <div class="email-us">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p></div>
+              <button class="link">Напишите нам</button>
+            </section>
+          </div>
+        </section>
 
-  <footer>
-    <section class="map">
-      <div class="container">
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <!-- <img src="img/map-marker.png" class="map-marker" alt="Метка Nerds"> -->
-          <p class="advantage-header">NЁRDS DESIGN STUDIO</p>
-          <p class=" ">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
-            <div class="email-us">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p></div>
-            <button class="link">Напишите нам</button>
+        <div class="container">
+          <section class="contacts-social">
+            <section class="social-media">
+              <a class="social-link" href="#"><img class="social-icons" src="img/icons/vk-icon.svg">Вконтакте</a>
+              <a class="social-link" href="#"><img class="social-icons" src="img/icons/fb-icon.svg">Фейсбук</a>
+              <a class="social-link" href="#"><img class="social-icons" src="img/icons/insta-icon.svg">Инстаграм</a>
+            </section>
+            <section class="sale">
+              <p class="advantage-promo">Давайте дружить, это выгодно!</p>
+              <p>Скидка 10&#37; для друзей из социальных сетей.</p>
+            </section>
           </section>
         </div>
+      </footer>
+
+      <section class="write-us">
+        <h3 class="advantage-promo">Напишите нам</h3>
+        <button type="button" class="close">Закрыть</button>
+        <form>
+          <div class="write-us-row">
+            <label class="write-us-cell">
+              <span class="write-us-name">Ваше имя:</span>
+              <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label class="write-us-cell">
+              <span class="write-us-name">Ваш e-mail:</span>
+              <input type="email" name="email" placeholder="Для отправки ответа">
+            </label>
+          </div>
+          <label class="write-us-cell">
+            <span class="write-us-name">Текст письма:</span>
+            <textarea name="text" placeholder="В свободной форме"></textarea>
+          </label>
+          <button class="link write-us-button">Отправить</button>
+        </form>
       </section>
 
-      <div class="container">
-        <section class="contacts-social">
-          <section class="social-media">
-            <a class="social-link" href="#"><img class="social-icons" src="img/icons/vk-icon.svg">Вконтакте</a>
-            <a class="social-link" href="#"><img class="social-icons" src="img/icons/fb-icon.svg">Фейсбук</a>
-            <a class="social-link" href="#"><img class="social-icons" src="img/icons/insta-icon.svg">Инстаграм</a>
-          </section>
-          <section class="sale">
-            <p class="advantage-promo">Давайте дружить, это выгодно!</p>
-            <p>Скидка 10&#37; для друзей из социальных сетей.</p>
-          </section>
-        </section>
-      </div>
-    </footer>
-
-    <section class="write-us">
-      <h3 class="advantage-promo">Напишите нам</h3>
-      <button type="button" class="close">Закрыть</button>
-      <form>
-        <div class="write-us-row">
-          <label class="write-us-cell">
-            <span class="write-us-name">Ваше имя:</span>
-            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-          </label>
-          <label class="write-us-cell">
-            <span class="write-us-name">Ваш e-mail:</span>
-            <input type="email" name="email" placeholder="Для отправки ответа">
-          </label>
-        </div>
-        <label class="write-us-cell">
-          <span class="write-us-name">Текст письма:</span>
-          <textarea name="text" placeholder="В свободной форме"></textarea>
-        </label>
-        <button class="link write-us-button">Отправить</button>
-      </form>
-    </section>
-
-    <script src="js/scripts.js"></script>
-    <script src="http://localhost:35729/livereload.js"></script>
-  </body>
-  </html>
+      <script src="js/scripts.js"></script>
+      <script src="http://localhost:35729/livereload.js"></script>
+    </body>
+    </html>
