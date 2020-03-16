@@ -739,8 +739,8 @@ input[name="features"]:checked + label[for^="features-"]::after {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .sort-price-model {
@@ -802,10 +802,67 @@ input[name="features"]:checked + label[for^="features-"]::after {
   color: black;
 }
 
-.product-sites img:nth-child(odd) {
-  margin-right: 80px;
+.catalog-container {
+  position: relative;
 }
 
-.product-sites img {
-  margin-bottom: 30px;
+.product-sites {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.catalog-item a {
+  margin-top: 40px;
+}
+
+.product-sites div.catalog-item:nth-child(odd) {
+  margin-right: 105px;
+  margin-bottom: 65px;
+}
+
+.product-sites .catalog-border {
+  position: absolute;
+  margin: 0;
+  width: 330px;
+  height: 40px;
+  background-color: #e9e9e9;
+  border-radius: 5px 5px 0 0;
+}
+
+.catalog-circle {
+  position: absolute;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.catalog-circle.right {
+  left: 15px;
+}
+
+.catalog-circle.center {
+  left: 35px;
+}
+
+.catalog-circle.left {
+  left: 55px;
+}
+
+.catalog-item a:hover,
+.catalog-item a:focus {
+  height: 485px;
+  box-shadow: -1px 10px 25px 5px rgba(0,0,0,0.18);
+}
+
+.product-sites .catalog-border:hover,
+.product-sites .catalog-border:focus {
+  background-color: #4d4d4d;
 }
